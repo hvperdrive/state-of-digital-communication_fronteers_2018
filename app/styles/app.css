@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+#app-wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #F7F7F7;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 400px;
+    height: 600px;
+    padding: 40px 10px 10px;
+    background: #FFFFFF;
+
+    box-shadow: 0px 2px 5px 0px rgba(153,153,153,0.59);
+}
+
+#app form {
+    margin: 10px 0 0;
+    width: 100%;
+}
+
+#app form input[type="text"] {
+    width: 100%;
+    padding: 5px 10px;
+    height: 43px;
+    border-radius: 3px;
+    font-size: 14px;
+    border: 1px solid #E7E7E7;
+
+    transition: border 250ms ease-out;
+}
+
+#app form input[type="text"]:focus {
+    border-color: #2C98F7;
+    outline: none;
+}

@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <base href="./app/">
+
+        <!-- Script imports -->
+        <script src="node_modules/whatwg-fetch/fetch.js"></script>
+        <script src="node_modules/vue/dist/vue.js"></script>
+        <script src="scripts/app.js"></script>
+
+        <!-- Components -->
+        <script src="scripts/components/message.js"></script>
+        <script src="scripts/components/messages.js"></script>
+
+        <!-- Styles -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+        <link rel="stylesheet" href="node_modules/normalize.css/normalize.css" />
+        <link rel="stylesheet" href="node_modules/animate.css/animate.min.css" />
+        <link rel="stylesheet" href="styles/app.css" />
+        <link rel="stylesheet" href="styles/animated-dots.css" />
+        <link rel="stylesheet" href="styles/messages.css" />
+    </head>
+
+    <div id="app-wrapper">
+        <div id="app">
+
+            <messages>
+                <message v-for="message in messages" :key="message.id" :text="message.text" :type="message.type" :loading="message.loading"></message>
+            </messages>
+
+            <form v-on:submit.prevent="onSubmit">
+                <input autocomplete="off" placeholder="Type your message" type="text" name="messageInput" v-model="message"/>
+            </form>
+        </div>
+    </div>
+</html>

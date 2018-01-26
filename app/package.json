@@ -1,0 +1,17 @@
+{
+  "name": "gastles_chatbots_2017_vuejs",
+  "version": "1.0.0",
+  "description": "VueJS Front-End to communicate with DialogFlow.",
+  "main": "scripts/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fabian Meul<fabian.meul@district01.be>",
+  "license": "ISC",
+  "dependencies": {
+    "animate.css": "~3.5.2",
+    "normalize.css": "~7.0.0",
+    "vue": "~2.5.3",
+    "whatwg-fetch": "~2.0.3"
+  }
+}

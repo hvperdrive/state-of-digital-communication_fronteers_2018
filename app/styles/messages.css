@@ -1,0 +1,53 @@
+.m-messages {
+    height: 100%;
+    overflow: scroll;
+    padding-right: 20px;
+}
+
+.m-message-wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.m-message-wrapper.is-remote,
+.m-message-wrapper.is-error {
+    text-align: right;
+}
+.m-message-wrapper.is-remote .m-message,
+.m-message-wrapper.is-error .m-message {
+    border-radius: 3px 0 3px 3px;
+    background-color: #2C98F7;
+    color: #FFFFFF;
+}
+
+.m-message-wrapper.is-error .m-message {
+	background-color: rgb(211, 80, 80);
+}
+
+
+.m-message-wrapper.is-local {
+    text-align: left;
+}
+.m-message-wrapper.is-local .m-message {
+    border-radius: 0 3px 3px 3px;
+    background-color: #F0F0F0;
+    color: #243141;
+}
+
+.m-message {
+    display: inline-block;
+    max-width: 80%;
+    padding: 14px;
+    margin: 0;
+    border-radius: 3px;
+    background: gray;
+    text-align: inherit;
+
+    animation-duration: 250ms;
+}
+
+.m-message img {
+    width: 100%;
+    margin-top: 20px;
+    border: 8px solid white;
+}

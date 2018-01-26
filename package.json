@@ -1,0 +1,23 @@
+{
+  "name": "gastles_chatbots_2017",
+  "version": "1.0.0",
+  "description": "NodeJS server to communicate with DialogFlow.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/nodemon index.js"
+  },
+  "author": "Fabian Meul<fabian.meul@district01.be>",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "~1.18.2",
+    "express": "~4.16.2",
+    "request": "~2.83.0",
+    "request-promise-native": "~1.0.5"
+  },
+  "devDependencies": {
+    "@district01/eslint-config": "~2.0.0",
+    "eslint": "~4.11.0",
+    "nodemon": "~1.12.1"
+  }
+}
